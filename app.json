@@ -20,6 +20,9 @@
     "GITHUB_TOKEN": {
       "description": "GitHub access token"
     },
+    "SPARKBOX_API_KEY": {
+      "description": "Sparkbox API key"
+    },
     "MONGODB_URI": {
       "description": "Mongo database connection URI"
     },
@@ -35,5 +38,11 @@
       "description": "Minimum interval allowed for scheduled tests (in hours)",
       "value": 12
     }
-  }
+  },
+  "addons": [
+    {
+      "plan": "mongolab:sandbox",
+      "as": "MONGODB"
+    }
+  ]
 }
