@@ -156,6 +156,16 @@ server.get('/decrypt/:key/:text?', (req, res) => {
 })
 
 // ------------------------------------
+// Endpoint: Wake-up
+// ------------------------------------
+
+server.get('/wakeup', (req, res) => {
+  const response = 'OK!'
+
+  res.send(response)
+})
+
+// ------------------------------------
 // Endpoint: Catch all
 // ------------------------------------
 
